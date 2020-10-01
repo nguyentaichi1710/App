@@ -13,7 +13,12 @@ server.listen(port, () => console.log('server running on port:' + port));
 
  để chạy sever ta dùng lệnh: 'nodemon sever.js' để file sever.js.
  
- -Call: 
+ -Call: Dùng PieSocket để tạo API Key của websocket 
+        Tạo một biên để nắm giữ kết nối 
+         const [conn, setConn] = useState(new WebSocket('wss://connect.websocket.in/v3/1998?api_key=Xn7ycNPVRfcjNSqA7mIaKT3p2tU5B8rWES7LWhNqcqdilIflUqYDqYyOEGiM',),);
+         
+          và dùng conn.onopen() để kết nối
+        
  
 
 
